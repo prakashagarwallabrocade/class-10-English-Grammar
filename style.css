@@ -651,6 +651,8 @@ details.mock-sol[open] > summary { margin-bottom: 6px; }
 
 /* More examples: a page per chapter, linked from the top bar, the menu, the index and the sections. */
 .quickref-link + .quickref-link { margin-left: 6px; }
+/* On phones the bar is tight: the page you are on needs no button of its own. */
+@media (max-width: 640px) { .more-link.is-current { display: none; } }
 .crumb-more span { font-weight: 600; }
 .menu .more-head > a { color: var(--accent); font-size: 15px; font-weight: 600; }
 .more-chip {
